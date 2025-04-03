@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* @tailwind base;
+@tailwind components; */
 @tailwind utilities;
 
 @theme {
@@ -16,8 +18,7 @@
 
 @layer base {
   body {
-    background-color: black;
-    padding-top: 100px;
+    background: black;
     height: 100%;
     font-family: var(--font-bricolage);
   }
