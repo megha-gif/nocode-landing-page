@@ -8,10 +8,12 @@ const Herosection = () => {
     <>
       {/* Hero section */}
       <div className="bg-[linear-gradient(to_bottom,#000514_30%,#000A1F_100%)] relative overflow-hidden min-h-screen w-full">
-        {/* Wrapping Div */}
+        {/* NavBar */}
         <Navbar />
+        {/* Wrapping Div */}
         <div className="container text-white flex  overflow-clip  justify-center items-center mx-auto lg:pb-70">
           <div className="flex mt-1 md:mt-25 lg:mt-0">
+            {/* Hero Image */}
             <Image
               src={Herodesign}
               alt="Hero Image"
@@ -19,6 +21,8 @@ const Herosection = () => {
               height={295}
               className="mt-35 absolute md:h-[600px] md:w-[550px] lg:h-[600px] lg:w-[600px] lg:mt-10"
             />
+
+            {/* Content of Hero Section */}
             <div className="flex flex-col mt-35 ml-[200px] relative md:ml-[400px] md:mt-45 lg:mt-30 lg:ml-[500px]">
               <div className="text-3xl text-white text-left font-bricolage font-thin md:text-[58px]">
                 <h1>Build Your</h1>
