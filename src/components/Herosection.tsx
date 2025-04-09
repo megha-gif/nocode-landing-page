@@ -32,7 +32,7 @@ const Herosection = () => {
                 </h1>
                 <h1 className="lg:hidden">Code</h1>
               </div>
-              <Link href="#">
+              <Link href="/Goback">
                 <button className="bg-[#007ACC] p-1 px-2 text-[18px] md:p-1.5 md:px-4 md:rounded-[8px] md:mt-10 md:ml-10 md:text-[25px] rounded-[5px] font-montserrat mt-5 ml-5 font-light hover:bg-[#0689cb]">
                   Get Started{" "}
                   <span className="hidden md:inline-block">For Free</span>

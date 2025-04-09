@@ -26,7 +26,10 @@ const features = [
 const Featuresection = () => {
   // Features Section
   return (
-    <div className="relative overflow-hidden min-h-screen mb-[0px] w-full bg-[linear-gradient(to_bottom,#000514_30%,#000A1F_100%)] pb-20">
+    <div
+      id="features"
+      className="relative overflow-hidden min-h-screen mb-[0px] w-full bg-[linear-gradient(to_bottom,#000514_30%,#000A1F_100%)] pb-20"
+    >
       {/* Wrapping Div */}
       <div className="container flex flex-col overflow-clip justify-center items-center mx-auto mt-13">
         <h1 className="text-[#FFFFFF] text-[33px] md:text-[45px] font-bricolage text-center font-thin">
