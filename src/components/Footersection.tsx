@@ -4,7 +4,7 @@ import github from "@/images/social-3.png";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Footersection() {
+const Footersection = () => {
   return (
     <footer className="overflow-hidden bg-[linear-gradient(to_bottom,#000514_30%,#000A1F_100%)] text-white py-8 ">
       <div className="container mx-auto px-6 text-center">
@@ -61,4 +61,6 @@ export default function Footersection() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footersection;

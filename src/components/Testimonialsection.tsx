@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 import photo1 from "@/images/photo-1.png";
 import photo2 from "@/images/photo-2.png";
 import rating1 from "@/images/rating-1.png";
 import rating2 from "@/images/rating-2.png";
+import { motion } from "framer-motion";
 
 const Testimonialsection = () => {
   return (
@@ -12,47 +14,67 @@ const Testimonialsection = () => {
     >
       {/* Wrapping Div */}
       <div className="container flex flex-col overflow-clip justify-center items-center mx-auto mt-5">
-        <h1 className="text-[32px] md:text-[35px] p-2 md:p-0 font-bricolage bg-[linear-gradient(to_right,#84A3E0_30%,#1B4DAE_100%)] bg-clip-text text-transparent mt-12">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="text-[32px] md:text-[35px] p-2 md:p-0 font-bricolage bg-[linear-gradient(to_right,#84A3E0_30%,#1B4DAE_100%)] bg-clip-text text-transparent mt-12"
+        >
           Loved by Thousands of No-Code{" "}
-          <span className=" md:block">Creators!</span>
-        </h1>
+          <span className="md:block">Creators!</span>
+        </motion.h1>
 
-        <p className="font-bricolage text-[20px] md:text-[22px] bg-[linear-gradient(to_right,#CFD7EF_30%,#3E68E2_100%)] bg-clip-text text-transparent text-center mt-2 mb-15">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="font-bricolage text-[20px] md:text-[22px] bg-[linear-gradient(to_right,#CFD7EF_30%,#3E68E2_100%)] bg-clip-text text-transparent text-center mt-2 mb-15"
+        >
           Free PlanSee what our users saying about our easy-to-use{" "}
           <span className="md:block">website builder.</span>
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col gap-[80px] md:flex-row md:justify-between md:gap-[120px] lg:gap-[460px]">
-          <div className="flex flex-col items-center">
-            <Image src={photo1} alt="client photo" className="w-[250px]" />
-            <p className="font-bricolage text-[18px] bg-[linear-gradient(to_right,#1949D2_30%,#567CE6_100%)] bg-clip-text text-transparent text-center mt-5">
-              Lisa, Blogger
-            </p>
-            <p className="font-bricolage text-[17px] bg-[linear-gradient(to_right,#1949D2_30%,#567CE6_100%)] bg-clip-text text-transparent ">
-              Super Intuitive and fast! The drag-
-              <span className="block">and-drop editor saved me hours.</span>
-            </p>
-            <Image src={rating1} alt="rating" className="w-[150px] mt-4" />
-          </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: 30 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center"
+        >
+          <div className="flex flex-col gap-[80px] md:flex-row md:justify-between md:gap-[120px] lg:gap-[460px]">
+            <div className="flex flex-col items-center">
+              <Image src={photo1} alt="client photo" className="w-[250px]" />
+              <p className="font-bricolage text-[18px] bg-[linear-gradient(to_right,#1949D2_30%,#567CE6_100%)] bg-clip-text text-transparent text-center mt-5">
+                Lisa, Blogger
+              </p>
+              <p className="font-bricolage text-[17px] bg-[linear-gradient(to_right,#1949D2_30%,#567CE6_100%)] bg-clip-text text-transparent ">
+                Super Intuitive and fast! The drag-
+                <span className="block">and-drop editor saved me hours.</span>
+              </p>
+              <Image src={rating1} alt="rating" className="w-[150px] mt-4" />
+            </div>
 
-          <div className="flex flex-col items-center">
-            <Image src={photo2} alt="client photo" className="w-[250px]" />
-            <p className="font-bricolage text-[18px] bg-[linear-gradient(to_right,#1949D2_30%,#567CE6_100%)] bg-clip-text text-transparent text-center mt-6">
-              John Doe, Freelancer
-            </p>
-            <p className="font-bricolage text-[17px] bg-[linear-gradient(to_right,#1949D2_30%,#567CE6_100%)] bg-clip-text text-transparent ">
-              I built my portfolio site in just
-              <span className="block">30 minutues without coding!</span>
-            </p>
-            <span className="flex gap-1">
-              <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
-              <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
-              <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
-              <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
-              <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
-            </span>
+            <div className="flex flex-col items-center">
+              <Image src={photo2} alt="client photo" className="w-[250px]" />
+              <p className="font-bricolage text-[18px] bg-[linear-gradient(to_right,#1949D2_30%,#567CE6_100%)] bg-clip-text text-transparent text-center mt-6">
+                John Doe, Freelancer
+              </p>
+              <p className="font-bricolage text-[17px] bg-[linear-gradient(to_right,#1949D2_30%,#567CE6_100%)] bg-clip-text text-transparent ">
+                I built my portfolio site in just
+                <span className="block">30 minutues without coding!</span>
+              </p>
+              <span className="flex gap-1">
+                <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
+                <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
+                <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
+                <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
+                <Image src={rating2} alt="rating" className="w-[30px] mt-4" />
+              </span>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

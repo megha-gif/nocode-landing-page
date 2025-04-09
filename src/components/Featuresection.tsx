@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import nocode from "@/images/feature-icon-1.png";
 import userinterface from "@/images/feature-icon-2.png";
 import rocket from "@/images/feature-icon-3.png";
+import { motion } from "framer-motion";
 
 const features = [
   {
@@ -32,13 +34,23 @@ const Featuresection = () => {
     >
       {/* Wrapping Div */}
       <div className="container flex flex-col overflow-clip justify-center items-center mx-auto mt-13">
-        <h1 className="text-[#FFFFFF] text-[33px] md:text-[45px] font-bricolage text-center font-thin">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="text-[#FFFFFF] text-[33px] md:text-[45px] font-bricolage text-center font-thin"
+        >
           AI-Powered Features
-        </h1>
+        </motion.h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  gap-4 max-w-9xl mx-auto mt-20 md:mt-38">
           {features.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: index * 0.2 }}
+              viewport={{ once: true }}
               className={`bg-[linear-gradient(to_bottom,#01081C_30%,#052582_100%)]  rounded-[20px] p-1 border-[#081e5a] border-[3px] ${
                 index === 2
                   ? "md:mx-auto md:col-span-2 md:w-1/2 lg:col-span-1 lg:w-full"
@@ -58,7 +70,7 @@ const Featuresection = () => {
                   className="w-[80px] mt-2 md:w-[80px] lg:mt-5"
                 />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
