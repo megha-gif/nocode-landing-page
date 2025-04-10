@@ -81,10 +81,9 @@ const Navbar = () => {
               </button>
             </Link>
             <Link href="/Goback">
-              2222
               <button
                 onClick={closeMenu}
-                className="text-[19px] text-white mx-auto mr-10 px[100px] bg-[#007ACC] rounded-[2px] hover:scale-105 font-montserrat"
+                className="text-[19px] text-white px[100px] bg-[#007ACC] rounded-[2px] hover:scale-105 font-montserrat"
               >
                 Get Started
               </button>
