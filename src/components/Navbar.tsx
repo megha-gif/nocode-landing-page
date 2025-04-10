@@ -83,7 +83,7 @@ const Navbar = () => {
             <Link href="/Goback">
               <button
                 onClick={closeMenu}
-                className="text-[19px] text-white p-5 px[130px] bg-[#007ACC] rounded-[2px] hover:scale-105 font-montserrat"
+                className="text-[19px] text-white p-5 px-[100px] bg-[#007ACC] rounded-[2px] hover:scale-105 font-montserrat"
               >
                 Get Started
               </button>
