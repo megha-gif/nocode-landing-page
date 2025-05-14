@@ -15,13 +15,6 @@ Create beautiful websites without writing a single line of code. This modern, re
 
 ---
 
-## 📸 Preview
-
-![download](https://github.com/user-attachments/assets/2746bf5b-0ace-4548-9fa7-c62767c47449)
-
-
----
-
 ## 🧱 Tech Stack
 
 - **Framework**: Next.js 14 (App Router) and React
@@ -30,6 +23,11 @@ Create beautiful websites without writing a single line of code. This modern, re
 - **TypeScript**: For type safety and scalability
 
 ---
+## 📸 Preview
+
+![download](https://github.com/user-attachments/assets/2746bf5b-0ace-4548-9fa7-c62767c47449)
+
+About Me: Hi! I'm Megha — a front-end developer focused on clean UI/UX Landing page. Connect with me on LinkedIn. https://www.linkedin.com/in/megha-frontend-697747364/
 
 ## 🛠️ Setup Instructions
 
